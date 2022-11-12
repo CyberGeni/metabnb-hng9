@@ -1,8 +1,21 @@
+import { Link } from 'react-router-dom';
+import Logo from '../assets/images/logo-gradient.svg'
 function Navbar() {
     return ( 
-        <div>
-            <h1>Navbar</h1>
-        </div>
+        <header className="w-5/6 h-[15vh] mx-auto flex justify-between items-center">
+            <img src={Logo} className="w-[10em] sm:w-[12em] md:w-[14em]" alt="" />
+            <div className="sm:flex justify-between w-full hidden">
+                <nav className="w-fit mx-auto sm:space-x-3 md:space-x-6 lg:space-x-9">
+                    <Link>Home</Link>
+                    <Link>Place to stay</Link>
+                    <span>NFTs</span>
+                    <span>Community</span>
+                </nav>
+                <button>
+                    <Link className="bg-[#A02279] text-white px-2 sm:px-3 md:px-5 py-2 md:py-3 rounded text-sm">Connect wallet</Link>
+                </button>
+            </div>
+        </header>
      );
 }
 
