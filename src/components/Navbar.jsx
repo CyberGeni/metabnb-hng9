@@ -3,9 +3,9 @@ import Logo from '../assets/images/logo-gradient.svg'
 function Navbar() {
     return ( 
         <header className="w-5/6 h-[15vh] mx-auto flex justify-between items-center">
-            <img src={Logo} className="w-[10em] sm:w-[12em] md:w-[14em]" alt="" />
-            <div className="sm:flex justify-between w-full hidden">
-                <nav className="w-fit mx-auto sm:space-x-3 md:space-x-6 lg:space-x-9">
+            <img src={Logo} className="w-[10em] sm:w-[11em] md:w-[13em]" alt="" />
+            <div className="md:flex justify-between w-full hidden">
+                <nav className="w-fit mx-auto sm:space-x-3 md:space-x-5 lg:space-x-9">
                     <Link>Home</Link>
                     <Link>Place to stay</Link>
                     <span>NFTs</span>
