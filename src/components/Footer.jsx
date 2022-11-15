@@ -5,7 +5,7 @@ import Instagram from '../assets/images/instagram-logo.svg'
 function Footer() {
     return ( 
         <>
-        <section className="px-[10%] pt-14 list-none mx-auto text-white list-style-none bg-[#1D1D1E] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <section className="px-[10%] pt-14 list-none mx-auto text-white list-style-none bg-[#1D1D1E] grid grid-cols-1 sm:grid-cols-4 gap-8">
             <div className="flex flex-col justify-between">
                 <img className="w-40 mb-2" src={Logo} alt="" />
                 <div className="flex space-x-4 my-4 md:mb-2">
