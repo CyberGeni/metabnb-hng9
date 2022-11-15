@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/images/logo-gradient.svg";
+import menu from "../assets/icons/menu.svg";
 import close from "../assets/icons/close.svg";
 import React, { useState } from "react";
 import Modal from "react-modal";
@@ -22,6 +23,7 @@ const customStyles = {
 
 function Navbar() {
   const [modalOpen, setModalOpen] = useState(false);
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
     <header className="w-5/6 h-[15vh] mx-auto flex justify-between items-center">
@@ -52,6 +54,7 @@ function Navbar() {
             </button>
         </Modal>
       </div>
+      <img src={menu} alt="" />
     </header>
   );
 }
