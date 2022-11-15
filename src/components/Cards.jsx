@@ -52,22 +52,22 @@ function Cards() {
         },
     ]
     return ( 
-        <div className="w-10/12 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="w-10/12 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-content-evenly place-items-center gap-4 mb-4">
             {
                 cards.map(card => (
                     <div>
                         <div 
                             key={card.id}
-                            className="border rounded-2xl border-gray-300 p-3"
+                            className="border rounded-2xl border-gray-300 p-3 w-fit"
                         >
-                            <img src={card.image} className="w-full" alt="" />
+                            <img src={card.image} className="w-full max-w-sm sm:max-w-xs" alt="" />
                             <div className="flex justify-between mt-4">
-                                <span>Desert king</span>
-                                <span className="font-medium">1MBT per night</span>
+                                <span className="text-xs">Desert king</span>
+                                <span className="font-semibold text-xs">1MBT per night</span>
                             </div>
                             <div className="flex justify-between my-2">
-                                <span>2345km away</span>
-                                <span className="">available 2weeks stay</span>
+                                <span className="text-xs">2345km away</span>
+                                <span className="text-xs">available 2weeks stay</span>
                             </div>
                             <div className="flex space-x-1 mb-2">
                                 <img src={Star} className="w-3" alt="" />

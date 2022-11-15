@@ -29,7 +29,7 @@ function Navbar() {
       <div className="md:flex justify-between w-full hidden">
         <nav className="w-fit mx-auto my-auto sm:space-x-3 md:space-x-5 lg:space-x-9">
           <Link>Home</Link>
-          <Link>Place to stay</Link>
+          <Link to="/placeToStay">Place to stay</Link>
           <span>NFTs</span>
           <span>Community</span>
         </nav>
