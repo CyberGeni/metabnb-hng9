@@ -1,44 +1,53 @@
 import Star from '../assets/icons/star-filled.svg';
+import Card1 from '../assets/images/card-img-1.svg';
+import Card2 from '../assets/images/card-img-2.svg';
+import Card3 from '../assets/images/card-img-3.svg';
+import Card4 from '../assets/images/card-img-4.svg';
+import Card5 from '../assets/images/card-img-5.svg';
+import Card6 from '../assets/images/card-img-6.svg';
+import Card7 from '../assets/images/card-img-7.svg';
+import Card8 from '../assets/images/card-img-8.svg';
+
 function Cards() {
     const cards = [
         {
             id: 1,
-            image: 'src/assets/images/card-img-1.svg',
+            image: Card1,
             name: 'Treasure 1'
         },
         {
             id: 2,
-            image: 'src/assets/images/card-img-2.svg',
+            image: Card2,
             name: 'Treasure 2'
         },
         {
             id: 3,
-            image: 'src/assets/images/card-img-3.svg',
+            image: Card3,
             name: 'Treasure 3'
         },
         {
             id: 4,
-            image: 'src/assets/images/card-img-4.svg',
+            image: Card4,
             name: 'Treasure 4'
         },
         {
             id: 5,
-            image: 'src/assets/images/card-img-5.svg',
+            image: Card5,
             name: 'Treasure 5'
         },
         {
             id: 6,
-            image: 'src/assets/images/card-img-6.svg',
+            image: Card6,
             name: 'Treasure 6'
         },
         {
             id: 7,
-            image: 'src/assets/images/card-img-7.svg',
+            image: Card7,
             name: 'Treasure 7'
         },
         {
             id: 8,
-            image: 'src/assets/images/card-img-8.svg',
+            image: Card8,
             name: 'Treasure 8'
         },
     ]
