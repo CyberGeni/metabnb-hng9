@@ -31,17 +31,17 @@ function Navbar() {
            className="w-[10em] sm:w-[11em] md:w-[13em]" alt="" />
       <div 
         className={
-          isNavExpanded ? "expanded h-screen fixed top-0 left-0 space-y-4 w-screen right-0  bg-white flex flex-col justify-center items-center" : "md:flex justify-between w-full hidden navigation-menu"
+          isNavExpanded ? "expanded h-screen md:h-fit fixed md:relative top-0 left-0 space-y-4 md:space-y-0 w-screen right-0  bg-white md:bg-transparent flex flex-col md:flex-row justify-center items-center" : "md:flex justify-between w-full hidden"
         }
         >
         <img 
           onClick={() => {
             setIsNavExpanded(!isNavExpanded);
           }}
-          className="sm:hidden absolute top-24 right-14 w-8 hover:cursor-pointer hover:w-9 transition-all" 
+          className="md:hidden absolute top-24 right-14 w-8 hover:cursor-pointer hover:w-9 transition-all" 
           src={close} alt="" />
         <nav className={
-          isNavExpanded ? " flex flex-col justify-center items-center" : "my-auto mx-auto space-x-4 space-y-4 sm:my-auto sm:space-x-3 md:space-x-5 lg:space-x-9"}>
+          isNavExpanded ? "flex flex-col md:flex-row justify-center items-center my-auto mx-auto space-x-2 md:text-sm lg:text-base space-y-4 md:space-y-0 md:my-auto md:space-x-4 lg:space-x-9 text-sm " : "my-auto mx-auto space-x-2 text-sm md:text-sm lg:text-base space-y-4 md:my-auto md:space-x-4 lg:space-x-9"}>
           <Link 
             to="/" 
             onClick={() => {
@@ -62,7 +62,7 @@ function Navbar() {
         </nav>
         <button
           onClick={() => setModalOpen(true)}
-          className="bg-[#A02279] h-fit text-white px-2 sm:px-3 md:px-5 py-2 md:py-3 rounded text-sm"
+          className="bg-[#A02279] h-fit text-white px-2 md:px-5 py-2 md:py-3 w-fit rounded text-sm"
         >
           Connect wallet
         </button>

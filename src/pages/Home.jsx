@@ -12,8 +12,8 @@ function Home() {
             <Navbar />
             <main>
                 {/* hero */}
-                <div className="min-h-[85vh] flex flex-col items-center justify-between">
-                    <section className="w-5/6 mx-auto flex md:flex-row flex-col-reverse">   
+                <div className="min-h-[85vh] my-auto flex flex-col items-center justify-between">
+                    <section className="w-5/6 mx-auto my-auto flex md:flex-row flex-col-reverse">   
                         <div className="space-y-5 my-auto mb-8">
                             <h1 className="md:w-5/6 font-medium text-4xl sm:text-5xl leading-tight">Rent a <span className="text-[#A02279]">Place</span> away from <span className="text-[#A02279]">Home</span> in the <span className="text-[#A02279]">Metaverse</span></h1>
                             <p className="md:w-3/4 md:text-lg">we provide you access to luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort zone</p>
